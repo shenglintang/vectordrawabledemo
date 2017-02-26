@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">VectorDrawableDemo</string>
+<<<<<<< HEAD
     <string name="left">left</string>
     <string name="right">right</string>
+=======
+>>>>>>> 73f99b4b19d1efe68ef34f3ca16274bac1e0ba84
 </resources>

@@ -1,10 +1,15 @@
 package com.lin.vectordrawabledemo;
 
+<<<<<<< HEAD
 import android.graphics.drawable.AnimatedVectorDrawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
+=======
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+>>>>>>> 73f99b4b19d1efe68ef34f3ca16274bac1e0ba84
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+<<<<<<< HEAD
 
     /*
     * VectorDrawable实现路径变换动画的兼容性问题，
@@ -31,4 +37,6 @@ public class MainActivity extends AppCompatActivity {
 //            ((Animatable) drawable).start();
 //        }
     }
+=======
+>>>>>>> 73f99b4b19d1efe68ef34f3ca16274bac1e0ba84
 }
