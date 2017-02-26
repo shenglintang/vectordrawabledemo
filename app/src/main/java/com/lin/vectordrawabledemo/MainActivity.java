@@ -1,6 +1,7 @@
 package com.lin.vectordrawabledemo;
 
-import android.graphics.drawable.AnimatedVectorDrawable;
+import android.graphics.drawable.Animatable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -21,14 +22,14 @@ public class MainActivity extends AppCompatActivity {
     */
     public void onClick(View view) {
         ImageView imageView = (ImageView) view;
-        AnimatedVectorDrawable vectorDrawable = (AnimatedVectorDrawable) getDrawable(R.drawable.fivestar_anim);
-        imageView.setImageDrawable(vectorDrawable);
-        if (vectorDrawable != null) vectorDrawable.start();
+//        AnimatedVectorDrawable vectorDrawable = (AnimatedVectorDrawable) getDrawable(R.drawable.fivestar_anim);
+//        imageView.setImageDrawable(vectorDrawable);
+//        if (vectorDrawable != null) vectorDrawable.start();
 
-//        Drawable drawable = imageView.getDrawable();
+        Drawable drawable = imageView.getDrawable();
 
-//        if (drawable instanceof Animatable) {
-//            ((Animatable) drawable).start();
-//        }
+        if (drawable instanceof Animatable) {
+            ((Animatable) drawable).start();
+        }
     }
 }
