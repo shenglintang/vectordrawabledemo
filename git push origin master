@@ -1,0 +1,169 @@
+[1mdiff --git a/.idea/gradle.xml b/.idea/gradle.xml[m
+[1mindex a531955..7ac24c7 100644[m
+[1m--- a/.idea/gradle.xml[m
+[1m+++ b/.idea/gradle.xml[m
+[36m@@ -3,14 +3,8 @@[m
+   <component name="GradleSettings">[m
+     <option name="linkedExternalProjectsSettings">[m
+       <GradleProjectSettings>[m
+[31m-<<<<<<< HEAD[m
+         <option name="distributionType" value="DEFAULT_WRAPPED" />[m
+         <option name="externalProjectPath" value="$PROJECT_DIR$" />[m
+[31m-=======[m
+[31m-        <option name="distributionType" value="LOCAL" />[m
+[31m-        <option name="externalProjectPath" value="$PROJECT_DIR$" />[m
+[31m-        <option name="gradleHome" value="C:\Program Files\Android\Android Studio\gradle\gradle-2.14.1" />[m
+[31m->>>>>>> 73f99b4b19d1efe68ef34f3ca16274bac1e0ba84[m
+         <option name="modules">[m
+           <set>[m
+             <option value="$PROJECT_DIR$" />[m
+[1mdiff --git a/.idea/vcs.xml b/.idea/vcs.xml[m
+[1mindex 94a25f7..fce7f71 100644[m
+[1m--- a/.idea/vcs.xml[m
+[1m+++ b/.idea/vcs.xml[m
+[36m@@ -2,5 +2,6 @@[m
+ <project version="4">[m
+   <component name="VcsDirectoryMappings">[m
+     <mapping directory="$PROJECT_DIR$" vcs="Git" />[m
+[32m+[m[32m    <mapping directory="$PROJECT_DIR$" vcs="Git" />[m
+   </component>[m
+ </project>[m
+\ No newline at end of file[m
+[1mdiff --git a/READEME b/READEME[m
+[1mdeleted file mode 100644[m
+[1mindex e69de29..0000000[m
+[1mdiff --git a/app/build.gradle b/app/build.gradle[m
+[1mindex c9d80da..3e99cf3 100644[m
+[1m--- a/app/build.gradle[m
+[1m+++ b/app/build.gradle[m
+[36m@@ -5,19 +5,11 @@[m [mandroid {[m
+     buildToolsVersion "25.0.0"[m
+     defaultConfig {[m
+         applicationId "com.lin.vectordrawabledemo"[m
+[31m-<<<<<<< HEAD[m
+         minSdkVersion 21[m
+         targetSdkVersion 25[m
+         versionCode 1[m
+         versionName "1.0"[m
+         vectorDrawables.useSupportLibrary = true[m
+[31m-=======[m
+[31m-        minSdkVersion 19[m
+[31m-        targetSdkVersion 25[m
+[31m-        versionCode 1[m
+[31m-        versionName "1.0"[m
+[31m-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"[m
+[31m->>>>>>> 73f99b4b19d1efe68ef34f3ca16274bac1e0ba84[m
+     }[m
+     buildTypes {[m
+         release {[m
+[36m@@ -29,13 +21,5 @@[m [mandroid {[m
+ [m
+ dependencies {[m
+     compile fileTree(dir: 'libs', include: ['*.jar'])[m
+[31m-<<<<<<< HEAD[m
+[31m-    compile 'com.android.support:appcompat-v7:25.1.0'[m
+[31m-=======[m
+[31m-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {[m
+[31m-        exclude group: 'com.android.support', module: 'support-annotations'[m
+[31m-    })[m
+     compile 'com.android.support:appcompat-v7:25.1.0'[m
+[31m-    testCompile 'junit:junit:4.12'[m
+[31m->>>>>>> 73f99b4b19d1efe68ef34f3ca16274bac1e0ba84[m
+ }[m
+[1mdiff --git a/app/src/main/java/com/lin/vectordrawabledemo/MainActivity.java b/app/src/main/java/com/lin/vectordrawabledemo/MainActivity.java[m
+[1mindex 3b5d969..3aa5bc5 100644[m
+[1m--- a/app/src/main/java/com/lin/vectordrawabledemo/MainActivity.java[m
+[1m+++ b/app/src/main/java/com/lin/vectordrawabledemo/MainActivity.java[m
+[36m@@ -1,15 +1,10 @@[m
+ package com.lin.vectordrawabledemo;[m
+ [m
+[31m-<<<<<<< HEAD[m
+ import android.graphics.drawable.AnimatedVectorDrawable;[m
+ import android.os.Bundle;[m
+ import android.support.v7.app.AppCompatActivity;[m
+ import android.view.View;[m
+ import android.widget.ImageView;[m
+[31m-=======[m
+[31m-import android.support.v7.app.AppCompatActivity;[m
+[31m-import android.os.Bundle;[m
+[31m->>>>>>> 73f99b4b19d1efe68ef34f3ca16274bac1e0ba84[m
+ [m
+ public class MainActivity extends AppCompatActivity {[m
+ [m
+[36m@@ -18,7 +13,6 @@[m [mpublic class MainActivity extends AppCompatActivity {[m
+         super.onCreate(savedInstanceState);[m
+         setContentView(R.layout.activity_main);[m
+     }[m
+[31m-<<<<<<< HEAD[m
+ [m
+     /*[m
+     * VectorDrawable实现路径变换动画的兼容性问题，[m
+[36m@@ -37,6 +31,4 @@[m [mpublic class MainActivity extends AppCompatActivity {[m
+ //            ((Animatable) drawable).start();[m
+ //        }[m
+     }[m
+[31m-=======[m
+[31m->>>>>>> 73f99b4b19d1efe68ef34f3ca16274bac1e0ba84[m
+ }[m
+[1mdiff --git a/app/src/main/res/layout/activity_main.xml b/app/src/main/res/layout/activity_main.xml[m
+[1mindex ea004cc..dc18d4e 100644[m
+[1m--- a/app/src/main/res/layout/activity_main.xml[m
+[1m+++ b/app/src/main/res/layout/activity_main.xml[m
+[36m@@ -1,7 +1,6 @@[m
+ <?xml version="1.0" encoding="utf-8"?>[m
+ <RelativeLayout[m
+     xmlns:android="http://schemas.android.com/apk/res/android"[m
+[31m-<<<<<<< HEAD[m
+     xmlns:app="http://schemas.android.com/apk/res-auto"[m
+     android:id="@+id/activity_main"[m
+     android:layout_width="match_parent"[m
+[36m@@ -16,20 +15,4 @@[m
+         android:layout_height="match_parent"[m
+         android:onClick="onClick"[m
+         app:srcCompat="@drawable/fivestar_anim"/>[m
+[31m-=======[m
+[31m-    xmlns:tools="http://schemas.android.com/tools"[m
+[31m-    android:id="@+id/activity_main"[m
+[31m-    android:layout_width="match_parent"[m
+[31m-    android:layout_height="match_parent"[m
+[31m-    android:paddingBottom="@dimen/activity_vertical_margin"[m
+[31m-    android:paddingLeft="@dimen/activity_horizontal_margin"[m
+[31m-    android:paddingRight="@dimen/activity_horizontal_margin"[m
+[31m-    android:paddingTop="@dimen/activity_vertical_margin"[m
+[31m-    tools:context="com.lin.vectordrawabledemo.MainActivity">[m
+[31m-[m
+[31m-    <TextView[m
+[31m-        android:layout_width="wrap_content"[m
+[31m-        android:layout_height="wrap_content"[m
+[31m-        android:text="Hello World!"/>[m
+[31m->>>>>>> 73f99b4b19d1efe68ef34f3ca16274bac1e0ba84[m
+ </RelativeLayout>[m
+[1mdiff --git a/app/src/main/res/values/strings.xml b/app/src/main/res/values/strings.xml[m
+[1mindex 72f03c5..8e44524 100644[m
+[1m--- a/app/src/main/res/values/strings.xml[m
+[1m+++ b/app/src/main/res/values/strings.xml[m
+[36m@@ -1,8 +1,5 @@[m
+ <resources>[m
+     <string name="app_name">VectorDrawableDemo</string>[m
+[31m-<<<<<<< HEAD[m
+     <string name="left">left</string>[m
+     <string name="right">right</string>[m
+[31m-=======[m
+[31m->>>>>>> 73f99b4b19d1efe68ef34f3ca16274bac1e0ba84[m
+ </resources>[m
+[1mdiff --git a/build.gradle b/build.gradle[m
+[1mindex 6754ca9..53f4fad 100644[m
+[1m--- a/build.gradle[m
+[1m+++ b/build.gradle[m
+[36m@@ -5,11 +5,7 @@[m [mbuildscript {[m
+         jcenter()[m
+     }[m
+     dependencies {[m
+[31m-<<<<<<< HEAD[m
+         classpath 'com.android.tools.build:gradle:2.2.1'[m
+[31m-=======[m
+[31m-        classpath 'com.android.tools.build:gradle:2.2.2'[m
+[31m->>>>>>> 73f99b4b19d1efe68ef34f3ca16274bac1e0ba84[m
+ [m
+         // NOTE: Do not place your application dependencies here; they belong[m
+         // in the individual module build.gradle files[m
